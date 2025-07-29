@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, "Twentieth Century", sans-serif;
+    background: white;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Cabin", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+
+/* FILTROS */
+
+.project-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;;
+    gap: 40px;
+}
+
+.filter-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 8px 20px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.35s ease;
+    font-size: 14px;
+    font-family: "Twentieth Century", sans-serif;
+    font-weight: bold;
+}
+  
+.filter-btn.active {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0 0 10px 10px rgba(255, 0, 0, 0.2);
+}
+
+.filter-btn:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    transition: 0.35s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 10px rgba(255, 0, 0, 0.2);
+}
+  
+/* FIN DE FILTROS */
+
+/* PROYECTOS */
+
+.section-title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-items: start;
+}
+
+.project-card {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 365px;
+    height: auto;
+    display: inline-block;
+}
+
+.image-wrapper img {
+    width: 100%;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper:hover img {
+    filter: brightness(70%);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .overlay-icon {
+    opacity: 1;
+}
+
+/* FIN DE PROYECTOS */
