@@ -1,63 +1,57 @@
 [
     {
       "titulo": "Proyecto 1",
-      "imagen": "./assets/img_pelota.jpg",
+      "imagen": "../assets/img_pelota.jpg",
       "anio": 3,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     },
     {
       "titulo": "Proyecto 2",
-      "imagen": "./assets/img_pelota_2.jpg",
+      "imagen": "../assets/img_pelota_2.jpg",
       "anio": 3,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     },
     {
       "titulo": "Proyecto 3",
-      "imagen": "./assets/img_pelota_2.jpg",
+      "imagen": "../assets/img_pelota_2.jpg",
       "anio": 3,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     },
     {
       "titulo": "Proyecto 4",
-      "imagen": "./assets/img_pelota_2.jpg",
+      "imagen": "../assets/img_pelota_2.jpg",
       "anio": 3,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     },
     {
       "titulo": "Proyecto 5",
-      "imagen": "./assets/img_pelota_2.jpg",
+      "imagen": "../assets/img_pelota_2.jpg",
       "anio": 3,
-      "link": "./projetcs/test.html"
-    },
-    {
-      "titulo": "Proyecto 6",
-      "imagen": "./assets/img_pelota_2.jpg",
-      "anio": 3,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     },
     {
       "titulo": "Proyecto 1",
-      "imagen": "./assets/img_patio.jpg",
+      "imagen": "../assets/img_patio.jpg",
       "anio": 4,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     },
     {
       "titulo": "Proyecto 1",
-      "imagen": "./assets/img_impresion_3d.jpg",
+      "imagen": "../assets/img_impresion_3d.jpg",
       "anio": 5,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     },
     {
       "titulo": "Proyecto 2",
-      "imagen": "./assets/img_software_impresion.jpg",
+      "imagen": "../assets/img_software_impresion.jpg",
       "anio": 5,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     },
     {
       "titulo": "Proyecto 3",
-      "imagen": "./assets/img_escuela.jpg",
+      "imagen": "../assets/img_escuela.jpg",
       "anio": 6,
-      "link": "./projetcs/test.html"
+      "link": "../projetcs/test.html"
     }
   ]
   

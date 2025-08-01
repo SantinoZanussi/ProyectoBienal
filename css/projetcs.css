@@ -75,14 +75,23 @@ strong {
     align-items: center;
     display: flex;
     margin-bottom: 40px;
+    margin-top: 40px;
     font-size: 1.8rem;
+}
+
+.projects-section {
+    flex: 1;
 }
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
     align-items: start;
+    padding: 0 2rem;
+    justify-content: center;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -100,7 +109,9 @@ strong {
 
 .image-wrapper {
     position: relative;
-    width: 365px;
+    width: 100%;
+    max-width: 365px;
+    margin: 0 auto;
     height: auto;
     display: inline-block;
 }

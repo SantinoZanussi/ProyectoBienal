@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, "Twentieth Century", sans-serif;
+    background: white;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: "Cabin", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.section-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Inter", sans-serif;
+}
+
+/* MODALIDAD INFORMÁTICA */
+
+.modality-section {
+    margin-bottom: 100px;
+}
+
+.modality-section .inner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-items: start;
+  }
+  
+.modality-image {
+    width: 100%;
+    height: 563px;
+    display: block;
+    border-radius: 12px;
+    filter: brightness(70%);
+}
+  
+.right-copy .section-title {
+    margin-top: 1px;
+    font-size: 1.8rem;
+}
+
+.right-copy .section-description {
+    margin-bottom: 1.15rem;
+    font-size: calc(var(1.1, 1) * .9375rem);
+    line-height: calc(var(0.8, 1) * 1.5);
+    font-weight: 500;
+}
+  
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.2em;
+}
+.features-list li {
+    position: relative;
+    padding-left: 1.8em;
+    margin-bottom: .8em;
+}
+.features-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: calc(var(1.1, 1) * .9375rem);
+    line-height: calc(var(0.8, 1) * 1.5);
+    font-weight: 500;
+}
+
+.modality-button {
+    color: black;
+    border: 1px solid black;
+    background: transparent;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 7px 30px;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.35s ease;
+    border-radius: 8px;
+    position: relative;
+    left: 35%;
+    margin-top: 40px;
+}
+
+.modality-button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.35s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FIN DE MODALIDAD INFORMÁTICA */
