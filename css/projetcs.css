@@ -80,7 +80,8 @@ strong {
 }
 
 .projects-section {
-    flex: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .projects-container {
