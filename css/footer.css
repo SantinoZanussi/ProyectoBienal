@@ -4,162 +4,217 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: normal;
-    font-weight: 400;
     box-sizing: border-box;
 }
 
 body {
     font-family: -apple-system, "Twentieth Century", sans-serif;
-    background: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-h1 {
-    font-family: "Cabin", sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-strong {
-    font-weight: bolder;
+    background: #f5f5f5;
 }
 
 footer {
-    width: 100%;
-    background: linear-gradient(360deg, red 15%, #ddd 170%);
-    padding: 20px;
-    font-weight: 300;
-    line-height: 1.7;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    font-family: "Cabin", sans-serif;
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, white 0%, #ff0000 50%, white 100%);
 }
 
 .containerFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 40px;
     display: grid;
-    grid-template-columns: 35% 40% 10%;
-    border-bottom: 2px solid white;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .divFooterIMG {
-    padding: 20px;
-    text-align: start;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     display: flex;
-    pointer-events: none;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.divFooterIMG img {
-    margin-right: 20px;
-    width: 50%;
-    height: auto;
+.divFooterIMG:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-.h3Footer {
+.divFooterIMG::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
     color: white;
-    font-weight: bold;
-    font-size: 17px;
+    z-index: 2;
 }
 
 .columns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 
-.linkRed {
-    text-decoration: none;
+.nosotros, .redes {
+    position: relative;
+}
+
+.h3Footer {
+    font-family: "Cabin", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
     color: white;
 }
 
+.h3Footer::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+.footer-menu-nosotros, .footer-menu-redes {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu-nosotros li, .footer-menu-redes li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer-menu-nosotros li::before, .footer-menu-redes li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.linkRed {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
 .linkRed:hover {
-    text-decoration: none;
-    color: rgb(221, 132, 132);
+    color: white;
+    transform: translateX(8px);
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
 }
 
-.nosotros {
-    margin-right: 75px;
-    text-decoration: none;
-    list-style: none;
-
+.linkRed:hover::before {
+    transform: translateX(5px);
 }
 
-.creditos {
-    margin-right: 75px;
-    text-decoration: none;
-    list-style: none;
-}
-
-.redes {
-    text-decoration: none;
-    list-style: none;
-}
-
-.footer-menu-nosotros {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-menu-credits {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-menu-redes {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-menu-credits li {
+.footer-menu-redes .linkRed {
     display: flex;
-    margin-top: 5px;
-    text-align: center;
     align-items: center;
-}
-.footer-menu li {
-    margin-bottom: 5px;
-    color: #FFEBA7;
+    gap: 10px;
 }
 
-@media (max-width: 1510px) {
+.footer-menu-redes .linkRed::after {
+    font-family: "Font Awesome 6 Brands";
+    font-size: 18px;
+}
+
+.copyright-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.copyright-text {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.footer-decoration {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
     .containerFooter {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        border-bottom: 2px solid #2B2E38;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 20px 30px;
     }
-    
-}
-
-@media (max-width: 900px) {
-    .h3Titulo{
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 690px) {
-    .divFooterIMG{
-        display: none;
-        visibility: hidden;
-    }
-}
-@media (max-width: 400px) {
 
     .columns {
-        display: block;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 
+    .divFooterIMG {
+        height: 250px;
+    }
+
+    .h3Footer {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerFooter {
+        padding: 30px 15px 20px;
+    }
+
+    .divFooterIMG {
+        height: 200px;
+    }
+
+    .divFooterIMG::before {
+        font-size: 16px;
+    }
+
+    .h3Footer {
+        font-size: 18px;
     }
 }
