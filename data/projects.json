@@ -1,7 +1,7 @@
 [
     {
       "titulo": "Proyecto 1",
-      "imagen": "../assets/img_pelota.jpg",
+      "imagen": "../assets/img_pelota_2.jpg",
       "anio": 3,
       "link": "../projects/test/test.html"
     },
