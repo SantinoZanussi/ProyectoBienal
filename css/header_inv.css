@@ -254,11 +254,9 @@ strong {
     }
     
     .logo {
-        position: relative;
         top: auto;
         left: auto;
         transform: none;
-        height: 40px;
     }
     
     h1 {
