@@ -3,19 +3,19 @@
       "titulo": "Proyecto 1",
       "imagen": "../assets/img_pelota.jpg",
       "anio": 3,
-      "link": "../projects/test.html"
+      "link": "../projects/test/test.html"
     },
     {
       "titulo": "Proyecto 2",
       "imagen": "../assets/img_pelota_2.jpg",
       "anio": 3,
-      "link": "../projects/test.html"
+      "link": "../projects/test/test.html"
     },
     {
       "titulo": "Proyecto 3",
       "imagen": "../assets/img_pelota_2.jpg",
       "anio": 3,
-      "link": "../projects/test.html"
+      "link": "../projects/test/test.html"
     },
     {
       "titulo": "Proyecto 4",
