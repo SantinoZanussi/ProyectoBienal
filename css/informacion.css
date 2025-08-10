@@ -172,6 +172,117 @@ strong {
 
 /* FIN DE MODALIDAD INFORMÁTICA */
 
+/* TABLA DE CONTENIDOS */
+
+table {
+    font-family: "Inter", sans-serif;
+    background: white;
+    padding: 20px;
+    line-height: 1.5;
+}
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.table-header {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.table-header h2 {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.75rem;
+}
+
+.year-cell {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 8px 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 80px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #2c3e50;
+    border-right: 2px solid #dc2626;
+}
+
+.subjects-cell {
+    border: 1px solid #dee2e6;
+    padding: 0;
+    vertical-align: top;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0;
+    height: 100%;
+}
+
+.subject-item {
+    padding: 8px;
+    border-right: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.subject-item:hover {
+    background-color: #f8f9fa;
+}
+
+.subject-item:last-child {
+    border-right: none;
+}
+
+.subject-title {
+    font-weight: bold;
+    color: #dc2626;
+    margin-bottom: 4px;
+    font-size: 0.75rem;
+    border-bottom: 1px solid #f1f3f4;
+    padding-bottom: 2px;
+}
+
+.topic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.topic-list li {
+    color: #555;
+    font-size: 0.7rem;
+    padding: 1px 0;
+    position: relative;
+    padding-left: 8px;
+}
+
+.topic-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #dc2626;
+    font-size: 0.6rem;
+} 
+
+/* FIN DE TABLA DE CONTENIDOS */
+
 /* PREGUNTAS FRECUENTES */
 
 .faq-container {
@@ -328,11 +439,6 @@ strong {
         font-size: 36px;
     }
     
-    .modality-section .inner-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
     .modality-image {
         height: 400px;
         max-width: 550px;
@@ -363,6 +469,18 @@ strong {
     
     .faq-container {
         padding: 25px;
+    }
+
+    .subjects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    
+    .subject-item {
+        padding: 6px;
+    }
+    
+    .content-table {
+        font-size: 0.7rem;
     }
 }
 
@@ -552,6 +670,39 @@ strong {
     .answer-content li {
         padding: 6px 0;
         padding-left: 20px;
+    }
+
+    .table-header {
+        padding: 8px;
+    }
+    
+    .table-header h2 {
+        font-size: 0.9rem;
+    }
+    
+    .content-table {
+        font-size: 0.6rem;
+    }
+    
+    .year-cell {
+        width: 50px;
+        padding: 4px 2px;
+        font-size: 0.65rem;
+    }
+    
+    .subject-item {
+        padding: 4px;
+    }
+    
+    .subject-title {
+        font-size: 0.65rem;
+        margin-bottom: 2px;
+    }
+    
+    .topic-list li {
+        font-size: 0.6rem;
+        padding: 0;
+        padding-left: 6px;
     }
 }
 
@@ -880,10 +1031,6 @@ strong {
     .faq-item.active .faq-answer {
         max-height: 600px;
     }
-    
-    .modality-section .inner-grid {
-        align-items: center;
-    }
 }
 
 /* texto largo */
@@ -1052,5 +1199,51 @@ strong {
     
     .faq-container {
         padding: 25px;
+    }
+
+    .table-container {
+        margin: 0 10px;
+    }
+    
+    .table-header {
+        padding: 10px;
+    }
+    
+    .table-header h2 {
+        font-size: 1rem;
+    }
+    
+    .content-table {
+        font-size: 0.65rem;
+    }
+    
+    .year-cell {
+        width: 60px;
+        padding: 6px 4px;
+        font-size: 0.7rem;
+    }
+    
+    .subjects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .subject-item {
+        padding: 6px;
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .subject-item:last-child {
+        border-bottom: none;
+    }
+    
+    .subject-title {
+        font-size: 0.7rem;
+        margin-bottom: 3px;
+    }
+    
+    .topic-list li {
+        font-size: 0.65rem;
+        padding-left: 6px;
     }
 }
