@@ -43,7 +43,7 @@
     },
     {
       "titulo": "Proyecto 3",
-      "imagen": "../assets/img_escuela.jpg",
+      "imagen": "../assets/img_software_impresion.jpg",
       "anio": 6,
       "link": "../projects/test.html"
     }

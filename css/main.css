@@ -61,7 +61,7 @@ strong {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 923px;
+    height: 83%;
     width: 100%;
     padding: 70px 50px;
     text-align: center;
@@ -266,7 +266,7 @@ strong {
 /* pantallas muy grandes (más de 1440px) */
 @media (min-width: 1441px) {
     .title-container {
-        height: 1000px;
+        height: 83%;
         padding: 80px 60px;
     }
     
