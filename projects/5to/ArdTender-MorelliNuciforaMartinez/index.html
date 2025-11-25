@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienal 2025 - ArdTender</title>
+    <link rel="icon" type="image/png" href="assets/icon_pag.png">
+    <link rel="stylesheet" href="main.css">
+    <!-- VOLVER A INICIO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/back_button.css">
+    <!-- VOLVER A INICIO -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <script src="./js/app-carousel.js"></script>
+    <script src="./js/open_info_team.js"></script>
+    <script type="module" src="./js/model_3d.js?v=2"></script>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+            <div class="header-content">
+                <nav class="nav" role="navigation">
+                    <ul class="nav-list">
+                        <li><a href="#objetivos"><h3 class="nav-link">Objetivos</h3></a></li>
+                        <li><a href="#tecnologia"><h3 class="nav-link">Tecnología</h3></a></li>
+                        <li><a href="#maqueta"><h3 class="nav-link">Maqueta 3D</h3></a></li>
+                        <li class="logo-item"><img src="./assets/2025 Logo Nuevo.svg" alt="Logo del Colegio" class="logo-img"></li>
+                        <li><a href="#galeria"><h3 class="nav-link">Galería</h3></a></li>
+                        <li><a href="#equipo"><h3 class="nav-link">Equipo</h3></a></li>
+                        <li><a href="#contacto"><h3 class="nav-link">Contacto</h3></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+        <section class="hero" role="banner">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="./assets/video.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">ArdTender</h1>
+                    <p class="hero-subtitle">Sistema automatizado de preparación de cocteles
+                    </p>
+
+                    <div class="badges">
+                        <span class="badge badge-year">5°1</span>
+                        <span class="badge badge-status">Finalizado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- APP -->
+    <section id="app-preview" class="section">
+        <div class="container">
+            <div class="app-container">
+                <h2>Aplicación</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="app-showcase">
+                    <div class="app-info">
+                        <h4>Funcionalidades Principales</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>Cargar Bebidas</h4>
+                                <p>Podés seleccionar las bebidas que tenés conectadas a cada bomba, ya sea bebida específica (Smirnoff) o categoría (Vodka).</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Selección de vaso</h4>
+                                <p>Podés elegir tu propio vaso o utilizar uno ya cargado.</p>
+                            </div>
+                             <div class="feature-item">
+                                <h4>Preparar bebida</h4>
+                                <p>La app te recomienda cocteles en base a las bebidas cargadas o podés armar tu propia mezcla.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-section">
+                        <div class="phone-container">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="carousel-container">
+                                        <img src="./assets/app/celun1.jpeg" alt="Captura 1" class="carousel-item active">
+                                        <img src="./assets/app/celun2.jpeg" alt="Captura 2" class="carousel-item">
+                                        <img src="./assets/app/celun3.jpeg" alt="Captura 3" class="carousel-item">
+                                        <img src="./assets/app/celun4.jpeg" alt="Captura 4" class="carousel-item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                            </div>
+                            <button class="carousel-btn next" aria-label="Siguiente">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- OBJETIVOS -->
+        <section id="objetivos" class="section section-alt">
+            <div class="container">
+                <div class="objectives-container">
+                    <h2>Objetivos del Proyecto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Desarrollar un sistema autónomo y fácil de usar.</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Permitir personalización de recetas.</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Crear una interfaz intuitiva</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Simplificar y agilizar el proceso de preparación de cócteles.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TECNOLOGÍA -->
+        <section id="tecnologia" class="section">
+            <div class="container">
+                <div class="tech-container">
+                    <h2>Tecnologías Utilizadas</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h4>Hardware</h4>
+                            <ul class="tech-list">
+                                <li>Arduino UNO R3, Bombas de agua R385 (x4), Motor paso a paso NEMA 17, Driver A4988, Módulo Bluetooth HC-05, Relé 8 canales, Maderas, Piezas 3D impresas</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4>Software & Datos</h4>
+                            <ul class="tech-list">
+                                <li>App Bluetooth personalizada, Base de datos de Firebase, Flutter, Android Studio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MAQUETA 3D -->
+        <section id="maqueta" class="section section-alt">
+            <div class="container">
+              <div class="model-container">
+                <h2>Maqueta 3D</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="model-showcase">
+                  <div class="model-container">
+                    <div id="stl-viewer" style="width: 100%; height: 500px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="section section-alt">
+            <div class="container">
+                <div class="gallery-container">
+                    <h2>Galería del Proyecto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 800px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="Imagen 2 galeria.jpeg" alt="Imagen 1 del proyecto" class="gallery-img">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Imagen 1 galeria.jpeg" alt="Imagen 2 del proyecto" class="gallery-img">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Imagen 3 galeria.jpeg" alt="Imagen 3 del proyecto" class="gallery-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EQUIPO -->
+        <section id="equipo" class="section">
+            <div class="container">
+                <div class="team-container">
+                    <h2>Equipo de Trabajo</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-3">
+                        <div class="team-card">
+                            <img src="assets/equipo/Matías Martínez.jpeg" alt="[Nombre Integrante 1]" class="team-avatar-img" width="80" height="80">
+                            <h4>Matías Martínez</h4>
+                            <p class="team-role">Documentación y maquetado</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/equipo/Lucas Morelli.jpeg" alt="[Nombre Integrante 2]" class="team-avatar-img" width="80" height="80">
+                            <h4>Lucas Morelli</h4>
+                            <p class="team-role">Diseño general, código Arduino y App</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/equipo/WhatsApp Image 2025-11-17 at 9.57.41 PM (3).jpeg" alt="[Nombre Integrante 3]" class="team-avatar-img" width="80" height="80">
+                            <h4>Luciano Nucifora</h4>
+                            <p class="team-role">Diseño 3D y armado del circuito</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARCO LEGAL -->
+        <section id="marco-legal" class="section">
+            <div class="container">
+                <div class="legal-container">
+                    <h2>Marco Legal</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="legal-grid">
+                        <div class="legal-item">
+                            <h3>El derecho al trabajo</h3>
+                            <ul>
+                                <li>El derecho al trabajo es un derecho humano fundamental, reconocido por la Constitución Nacional Argentina y diversos tratados internacionales.</li>
+                                <li>Este derecho implica la posibilidad de acceder a un empleo digno, en condiciones justas y equitativas, sin discriminación alguna.</li>
+                            </ul>
+                        </div>
+                        <div class="legal-item">
+                            <h3>El artículo 14 bis</h3>
+                            <ul>
+                                <li>El artículo 14 bis establece que “el trabajo en sus diversas formas gozará de la protección de las leyes, asegurando condiciones dignas y equitativas de labor”.</li>
+                                <li>Este artículo también reconoce el derecho a la seguridad social, a la jornada limitada, al descanso y a las vacaciones pagadas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section section-alt">
+            <div class="container">
+                <div class="contact-container">
+                    <h2>Contacto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="contact-hero">
+                        <div class="contact-text">
+                            <h3>¿Tenés preguntas sobre el proyecto?</h3>
+                            <p>Ponete en contacto con nosotros para más información.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <a class="contact-method">
+                                <div class="method-details">
+                                    <h4>Email</h4>
+                                    <p>soporte.ardtender@gmail.com</p>
+                                </div>
+                            </a>
+    
+                            <a class="contact-method">
+                                <div class="method-details">
+                                    <h4>Teléfono</h4>
+                                    <p>+54 9 341 202 0735</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- INFO DE LA PERSONA -->
+    <div id="integrante1" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Martínez Matías</h4>
+          <p>Soy un desarrollador orientado a la organización, la planificación y el maquetado preciso de proyectos tecnológicos. Me motiva convertir ideas dispersas en estructuras claras, ordenadas y ejecutables, asegurando que cada etapa avance con lógica y coherencia. Destaco en la gestión de tareas, documentación completa y en el diseño y maquetado del producto final, cuidando que cada componente encaje en su lugar de forma funcional y estética. En ArdTender aplico esta combinación de organización, detalle y visión estructural para transformar conceptos complejos en un proyecto sólido, bien documentado y perfectamente maquetado, listo para funcionar y escalar.</p>
+        </div>
+    </div>
+    <div id="integrante2" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Morelli Lucas</h4>
+          <p>Soy un desarrollador obsesionado con el diseño limpio, preciso y visualmente impecable. Me mueve la necesidad de llevar cada idea más allá de lo posible, buscando resultados que no solo funcionen, sino que rocen la perfección. Combino dominio en Flutter, Arduino y desarrollo web para crear experiencias integradas, estéticas y técnicamente sólidas. En ArdTender aplico esta mezcla de creatividad, detalle extremo y capacidad técnica para transformar conceptos complejos en soluciones elegantes, eficientes y totalmente funcionales.</p>
+        </div>
+    </div>
+    <div id="integrante3" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Nucifora Luciano</h4>
+          <p>Soy un desarrollador con una fuerte orientación al hardware y la electrónica aplicada. Me impulsa la precisión: desde el diseño y armado de circuitos hasta la calibración fina de motores, bombas y sistemas automatizados. Trabajo con Arduino, módulos Bluetooth, drivers, relés y componentes variados, y destaco por una soldadura limpia y confiable que garantiza prototipos sólidos. En ArdTender combino técnica, ingeniería casera y criterio práctico para convertir ideas complejas en dispositivos reales, estables y totalmente funcionales, integrando electrónica, mecánica y diseño con un enfoque meticuloso y eficiente.</p>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="containerFooter">
+            <div class="divFooterIMG">
+                <!--MAPA GOOGLE MAPS-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.5123697770787!2d-60.6464449234548!3d-32.93747947142706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab3bc098ae53%3A0xef489fd55681c585!2sCasa%20Salesiana%20San%20Jos%C3%A9!5e0!3m2!1ses!2sar!4v1754265586499!5m2!1ses!2sar" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="columns">
+                <div class="nosotros">
+                    <h3 class="h3Footer">SOBRE NOSOTROS</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar">Sitio oficial</a></li>
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar/bienal/">Bienal 2025</a></li>
+                    </ul>
+                </div>
+                <div class="nosotros">
+                    <h3 class="h3Footer">CONTACTO DEL COLEGIO</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed">contacto[@]sanjoserosario.com.ar</a></li>
+                        <li><a class="linkRed" href="tel:03414401098">(0341) 4401098</a></li>
+                        <li><a class="linkRed">Lunes a viernes: de 07:00 a 22:00 hs.</a></li>
+                        <li><a class="linkRed">Sábados: de 08:00 a 20:00 hs.</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">REDES DEL COLEGIO</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="https://www.facebook.com/casasanjo">Facebook</a></li>
+                        <li><a class="linkRed" href="https://www.instagram.com/casasanjo/">Instagram</a></li>
+                        <li><a class="linkRed" href="https://ar.linkedin.com/school/casasanjo/">LinkedIn</a></li>
+                        <li><a class="linkRed" href="https://www.youtube.com/c/CasaSalesianaSanJos%C3%A9">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">DESARROLLADORES</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="integrante1"><strong>Martínez Matías</strong></a></li>
+                        <li><a class="linkRed" href="integrante2"><strong>Morelli Lucas</strong></a></li>
+                        <li><a class="linkRed" href="integrante3"><strong>Nucifora Luciano</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="footer-decoration"></div>
+            <p class="copyright-text">© 2025 Casa Salesiana San José. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- VOLVER A INICIO -->
+    <a href="../../../html/projects.html" class="floating-home-btn">
+        <span>Volver a inicio</span>
+        <i class="fa-solid fa-right-to-bracket icon"></i>
+    </a>
+    <!-- VOLVER A INICIO -->
+</html>

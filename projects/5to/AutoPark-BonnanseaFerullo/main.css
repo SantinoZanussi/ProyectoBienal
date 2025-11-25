@@ -1,0 +1,31 @@
+/* ============================================
+   STYLE.CSS - Archivo Principal
+   Importa todos los módulos CSS del proyecto
+   ============================================ */
+
+/* 1. Variables y estilos base */
+@import url('css/base.css');
+
+/* 2. Sistema de layout y grids */
+@import url('css/layout.css');
+
+/* 3. Header y navegación */
+@import url('css/header.css');
+
+/* 4. Sección hero */
+@import url('css/hero.css');
+
+/* 5. Componentes reutilizables */
+@import url('css/components.css');
+
+/* 6. Vista previa de app móvil */
+@import url('css/app-preview.css');
+
+/* 7. Secciones específicas */
+@import url('css/sections.css');
+
+/* 8. Footer */
+@import url('css/footer.css');
+
+/* 9. Responsive */
+@import url('css/responsive.css');

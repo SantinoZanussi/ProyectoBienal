@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienal 2025 - AutoPark</title>
+    <link rel="icon" type="image/png" href="assets/icon_pag.png">
+    <link rel="stylesheet" href="main.css">
+    <!-- VOLVER A INICIO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/back_button.css">
+    <!-- VOLVER A INICIO -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <script src="./js/app-carousel.js"></script>
+    <script src="./js/open_info_team.js"></script>
+    <script type="module" src="./js/model_3d.js?v=2"></script>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+            <div class="header-content">
+                <nav class="nav" role="navigation">
+                    <ul class="nav-list">
+                        <li><a href="#objetivos"><h3 class="nav-link">Objetivos</h3></a></li>
+                        <li><a href="#tecnologia"><h3 class="nav-link">Tecnología</h3></a></li>
+                        <li><a href="#maqueta"><h3 class="nav-link">Maqueta 3D</h3></a></li>
+                        <li class="logo-item"><img src="./assets/2025 Logo Nuevo.svg" alt="Logo del Colegio" class="logo-img"></li>
+                        <li><a href="#equipo"><h3 class="nav-link">Equipo</h3></a></li>
+                        <li><a href="#contacto"><h3 class="nav-link">Contacto</h3></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+        <section class="hero" role="banner">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="./assets/Vídeo Proyecto Estacionamiento Inteligente.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Autopark</h1>
+                    <p class="hero-subtitle">Estacionamiento automatizado con reserva inteligente y control visual por luces y app</p>
+
+                    <div class="badges">
+                        <span class="badge badge-year">5° 1</span>
+                        <span class="badge badge-status">En Proceso</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- APP -->
+    <section id="app-preview" class="section">
+        <div class="container">
+            <div class="app-container">
+                <h2>Aplicación</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="app-showcase">
+                    <div class="app-info">
+                        <h4>Funcionalidades Principales</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>Reservar lugares</h4>
+                                <p>La función de reservar permite apartar una plaza desde la app, marcándola con luz amarilla para indicar que está ocupada temporalmente.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Precios visibles</h4>
+                                <p>El usuario puede visualizar entre varis precios impuestos por los estacionamientos </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-section">
+                        <div class="phone-container">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="carousel-container">
+                                        <img src="./1000120079.png" alt="Captura 1" class="carousel-item active">
+                                        <img src="./1000120082.png" alt="Captura 2" class="carousel-item">
+                                        <img src="./1000120084.png" alt="Captura 3" class="carousel-item">
+                                        <img src="./1000120086.png" alt="Captura 4" class="carousel-item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                            </div>
+                            <button class="carousel-btn next" aria-label="Siguiente">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- OBJETIVOS -->
+        <section id="objetivos" class="section section-alt">
+            <div class="container">
+                <div class="objectives-container">
+                    <h2>Objetivos del Proyecto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Optimizar la busqueda de estacionamiento</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Reducir la hella de carbono</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Ayudar con los clientes a los dueños de estacionamiento</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Facilitar la gestión de los estacionamientos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TECNOLOGÍA -->
+        <section id="tecnologia" class="section">
+            <div class="container">
+                <div class="tech-container">
+                    <h2>Tecnologías Utilizadas</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h4>Hardware</h4>
+                            <ul class="tech-list">
+                                <li>Arduino, Sensores, Leds, Motor, modulos(wifi/RFID)</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4>Software & Datos</h4>
+                            <ul class="tech-list">
+                                <li>MIT, C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MAQUETA 3D -->
+        <section id="maqueta" class="section section-alt">
+            <div class="container">
+              <div class="model-container">
+                <h2>Maqueta 3D</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="model-showcase">
+                  <div class="model-container">
+                    <div id="stl-viewer" style="width: 100%; height: 500px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- EQUIPO -->
+        <section id="equipo" class="section">
+            <div class="container">
+                <div class="team-container">
+                    <h2>Equipo de Trabajo</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-3">
+                        <div class="team-card">
+                            <img src="./1000028266.jpg" alt="[Nombre Integrante 1]" class="team-avatar-img" width="80" height="80">
+                            <h4>Dante Ferullo</h4>
+                            <p class="team-role">desarollador</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="./1000118761.jpg" alt="[Nombre Integrante 2]" class="team-avatar-img" width="80" height="80">
+                            <h4>Pedro Bonansea</h4>
+                            <p class="team-role">desarollador</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARCO LEGAL -->
+        <section id="marco-legal" class="section">
+            <div class="container">
+                <div class="legal-container">
+                    <h2>Marco Legal</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="legal-grid">
+                        <div class="legal-item">
+                            <h3>Normativas de Tránsito</h3>
+                            <ul>
+                                <li>La Ley Nacional de Tránsito N° 24.449 establece las normas generales sobre circulación, señalización, uso de la vía pública y responsabilidades de los conductores. Además, puede complementarse con decretos y reglamentaciones provinciales o municipales que adapten ciertos aspectos a cada jurisdicción.</li>
+                                <li>Las reglas de estacionamiento se definen principalmente por ordenanzas municipales, que establecen horarios, zonas permitidas o restringidas, sistemas de estacionamiento medido y espacios reservados. También se deben cumplir las normas sobre plazas para personas con discapacidad, señalización adecuada y los requisitos técnicos locales sobre dimensiones, accesos y seguridad.</li>
+                            </ul>
+                        </div>
+                        <div class="legal-imgg">  
+                            <ul>
+                                <img src="models/Seguridad Vial.png" alt="seguridad vial qr" class="legal-img">
+                            </ul>
+                        </div>
+                        <div class="legal-item">
+                            <h3>Aspectos Normativos</h3>
+                            <ul>
+                                <li>Regulan el uso del espacio público y las condiciones específicas de circulación y estacionamiento dentro de cada localidad. Incluyen disposiciones sobre horarios, zonas permitidas o prohibidas, estacionamiento medido, espacios reservados y sanciones por infracciones.</li>
+                                <li>Establecen los requisitos de infraestructura y seguridad que deben cumplir los estacionamientos, como dimensiones mínimas de las plazas, accesos, señalización, iluminación, ventilación y medidas de protección. Estas normas garantizan que las instalaciones sean seguras y funcionales para los usuarios.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section section-alt">
+            <div class="container">
+                <div class="contact-container">
+                    <h2>Contacto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="contact-hero">
+                        <div class="contact-text">
+                            <h3>¿Tenés preguntas sobre el proyecto?</h3>
+                            <p>Ponete en contacto con nosotros para más información.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:[Email]" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Email</h4>
+                                    <p>dferullo07@sanjoserosario.com.ar</p>
+                                </div>
+                            </a>
+    
+                            <a href="tel:[Teléfono]" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Teléfono</h4>
+                                    <p>341 721-1618</p>
+                                </div>
+                            </a>
+                            
+                            <a href="mailto:[Email]" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Email</h4>
+                                    <p>pbonansea08@sanjoserosario.com.ar</p>
+                                </div>
+                            </a>
+    
+                            <a href="tel:[Teléfono]" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Teléfono</h4>
+                                    <p>341 581-8933</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- INFO DE LA PERSONA -->
+    <div id="integrante1" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Dante Ferullo</h4>
+          <p>Soy Dante Ferullo, técnico y desarrollador práctico con experiencia en integración de hardware y software y en desarrollo web y móvil; me caracterizo por ser resolutivo y orientado a resultados: aprendo rápido, simplifico soluciones complejas y comunico con claridad tanto a equipos técnicos como a usuarios. Trabajo de forma ordenada y responsable, priorizando la calidad y la fiabilidad, y disfruto llevar proyectos desde la idea hasta la entrega final; busco aportar en equipos donde pueda ejecutar y mejorar procesos constantemente.</p>
+        </div>
+    </div>
+    <div id="integrante2" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Pedro Bonansea</h4>
+          <p>Soy una persona responsable, proactiva y comprometida con el trabajo en equipo. Me adapto fácilmente a distintos entornos y busco siempre aprender cosas nuevas para mejorar mis habilidades. Tengo buen manejo de herramientas digitales y una actitud positiva frente a los desafíos. Mi objetivo es seguir creciendo profesionalmente y aportar con dedicación y creatividad en cada proyecto que emprenda.</p>
+        </div>
+    </div>
+  
+    <!-- FOOTER -->
+    <footer>
+        <div class="containerFooter">
+            <div class="divFooterIMG">
+                <!--MAPA GOOGLE MAPS-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.5123697770787!2d-60.6464449234548!3d-32.93747947142706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab3bc098ae53%3A0xef489fd55681c585!2sCasa%20Salesiana%20San%20Jos%C3%A9!5e0!3m2!1ses!2sar!4v1754265586499!5m2!1ses!2sar" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="columns">
+                <div class="nosotros">
+                    <h3 class="h3Footer">SOBRE NOSOTROS</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar">Sitio oficial</a></li>
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar/bienal/">Bienal 2025</a></li>
+                    </ul>
+                </div>
+                <div class="nosotros">
+                    <h3 class="h3Footer">CONTACTO DEL COLEGIO</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed">contacto@sanjoserosario.com.ar</a></li>
+                        <li><a class="linkRed" href="tel:341 581-8933">341 581-8933</a></li>
+                        <li><a class="linkRed">Lunes a viernes: de 07:00 a 22:00 hs.</a></li>
+                        <li><a class="linkRed">Sábados: de 08:00 a 20:00 hs.</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">REDES DEL COLEGIO</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="https://www.facebook.com/casasanjo">Facebook</a></li>
+                        <li><a class="linkRed" href="https://www.instagram.com/casasanjo/">Instagram</a></li>
+                        <li><a class="linkRed" href="https://ar.linkedin.com/school/casasanjo/">LinkedIn</a></li>
+                        <li><a class="linkRed" href="https://www.youtube.com/c/CasaSalesianaSanJos%C3%A9">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">DESARROLLADORES</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="integrante1"><strong>Dante Ferullo</strong></a></li>
+                        <li><a class="linkRed" href="integrante2"><strong>Pedro Bonansea</strong></a></li>
+                        <!-- <li><a class="linkRed" href="integrante3"><strong>[Nombre3]</strong></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="footer-decoration"></div>
+            <p class="copyright-text">© 2025 Casa Salesiana San José. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- VOLVER A INICIO -->
+    <a href="../../../html/projects.html" class="floating-home-btn">
+        <span>Volver a inicio</span>
+        <i class="fa-solid fa-right-to-bracket icon"></i>
+    </a>
+    <!-- VOLVER A INICIO -->
+</body>
+</html>

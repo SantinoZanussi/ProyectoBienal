@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienal 2025 - SmartPark</title>
+    <link rel="icon" type="image/png" href="assets/icon_pag.png">
+    <link rel="stylesheet" href="main.css">
+    <!-- VOLVER A INICIO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/back_button.css">
+    <!-- VOLVER A INICIO -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <script src="./js/app-carousel.js"></script>
+    <script src="./js/open_info_team.js"></script>
+    <script type="module" src="./js/model_3d.js?v=2"></script>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+            <div class="header-content">
+                <nav class="nav" role="navigation">
+                    <ul class="nav-list">
+                        <li><a href="#objetivos"><h3 class="nav-link">Objetivos</h3></a></li>
+                        <li><a href="#tecnologia"><h3 class="nav-link">Tecnología</h3></a></li>
+                        <li><a href="#maqueta"><h3 class="nav-link">Maqueta 3D</h3></a></li>
+                        <li class="logo-item"><img src="./assets/2025 Logo Nuevo.svg" alt="Logo del Colegio" class="logo-img"></li>
+                        <li><a href="#galeria"><h3 class="nav-link">Galería</h3></a></li>
+                        <li><a href="#equipo"><h3 class="nav-link">Equipo</h3></a></li>
+                        <li><a href="#contacto"><h3 class="nav-link">Contacto</h3></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+        <section class="hero" role="banner">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="./assets/Funcioamiento.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">SmartPark</h1>
+                    <p class="hero-subtitle">Encontrá tu lugar, sin complicaciones.</p>
+
+                    <div class="badges">
+                        <span class="badge badge-year">5° 1</span>
+                        <span class="badge badge-status">Finalizado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- APP -->
+    <section id="app-preview" class="section">
+        <div class="container">
+            <div class="app-container">
+                <h2>Aplicación</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="app-showcase">
+                    <div class="app-info">
+                        <h4>Funcionalidades Principales</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>Registo de Usuario</h4>
+                                <p>Crear cuenta y gestionar perfil personal.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Gestión de Vehículos</h4>
+                                <p>Registrar patentes de múltiples autos.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Sistema de Reservar</h4>
+                                <p>Reservar espacios en tiempo real</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Acceso Seguro</h4>
+                                <p>Validación automática de patentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-section">
+                        <div class="phone-container">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="carousel-container">
+                                        <img src="./assets/app/Screen 1.jpg" alt="Captura 1" class="carousel-item active">
+                                        <img src="./assets/app/Screen Registros.jpg" alt="Captura 2" class="carousel-item">
+                                        <img src="./assets/app/Screen Reserva.jpg" alt="Captura 3" class="carousel-item">
+                                        <img src="./assets/app/Screen Reloj.jpg" alt="Captura 4" class="carousel-item">
+                                        <img src="./assets/app/Screen Pago.jpg" alt="Captura 5" class="carousel-item">
+                                        <img src="./assets/app/Screen Final.jpg" alt="Captura 6" class="carousel-item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                                <span class="dot" data-index="4"></span>
+                                <span class="dot" data-index="5"></span>
+                            </div>
+                            <button class="carousel-btn next" aria-label="Siguiente">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- OBJETIVOS -->
+        <section id="objetivos" class="section section-alt">
+            <div class="container">
+                <div class="objectives-container">
+                    <h2>Objetivos del Proyecto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Reducir la huella de carbono</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Mejorar la calidad de vida de los usuarios</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Incrementar la eficiencia operativa y la rentabilidad</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Incorporar tecnologías inteligentes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TECNOLOGÍA -->
+        <section id="tecnologia" class="section">
+            <div class="container">
+                <div class="tech-container">
+                    <h2>Tecnologías Utilizadas</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h4>Hardware</h4>
+                            <ul class="tech-list">
+                                <li>Sensores ultrasónicos, Arduino UNO, Neopíxeles, Cámara con reconocimiento de patentes, etc.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4>Software & Datos</h4>
+                            <ul class="tech-list">
+                                <li>C++, Python, Mit App Inventor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MAQUETA 3D -->
+        <section id="maqueta" class="section section-alt">
+            <div class="container">
+              <div class="model-container">
+                <h2>Maqueta 3D</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="model-showcase">
+                  <div class="model-container">
+                    <div id="stl-viewer" style="width: 100%; height: 500px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="section section-alt">
+            <div class="container">
+                <div class="gallery-container">
+                    <h2>Galería del Proyecto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="Vista Entrada.jpg" alt="Imagen 1 del proyecto" class="gallery-img">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Vista Plaza.jpg" alt="Imagen 2 del proyecto" class="gallery-img">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="Vista Superior.jpg" alt="Imagen 3 del proyecto" class="gallery-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EQUIPO -->
+        <section id="equipo" class="section">
+            <div class="container">
+                <div class="team-container">
+                    <h2>Equipo de Trabajo</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="team-card">
+                            <img src="./assets/equipo/Carrasco.jpg" class="team-avatar-img" width="80" height="80">
+                            <h4>Ramiro Carrasco</h4>
+                            <p class="team-role">Maqueta y hardware</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="./assets/equipo/Sordoni.JPG" class="team-avatar-img" width="80" height="80">
+                            <h4>Nicolás Sordoni</h4>
+                            <p class="team-role">Codificación y diseño</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARCO LEGAL -->
+        <section id="marco-legal" class="section">
+            <div class="container">
+                <div class="legal-container">
+                    <h2>Marco Legal</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="legal-grid">
+                        
+                        <center>
+<div class="legal-item">
+                            <center><img src="QR Druetta.png" height="150px" width="150px"></center>
+                            </ul>
+                        </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section section-alt">
+            <div class="container">
+                <div class="contact-container">
+                    <h2>Contacto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="contact-hero">
+                        <div class="contact-text">
+                            <h3>¿Tenés preguntas sobre el proyecto?</h3>
+                            <p>Ponete en contacto con nosotros para más información.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=smartpark2043@gmail.com" target="_blank" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Email</h4>
+                                    <p>smartpark2043@gmail.com</p> 
+                                </div>
+                            </a>
+    
+                            <a href="https://wa.me/543415853683" target="_blank" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Teléfono</h4>
+                                    <p>+54 9 341 585-3683</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- INFO DE LA PERSONA -->
+    <div id="integrante1" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Ramiro Carrasco</h4>
+          <p>Estudiante apasionado por la electrónica y el funcionamiento interno de los sistemas físicos. Se destaca por su habilidad para transformar ideas en prototipos reales, trabajando con precisión en maquetas, cableado y montaje de componentes. Tiene experiencia en Arduino, diseño y construcción de circuitos, así como en modelado 3D orientado al desarrollo de proyectos tecnológicos. Actualmente cursa el penúltimo año de la especialidad Informática en la Escuela Técnica N°2043 San José, donde ha participado en iniciativas aplicadas a problemas reales, entre ellas SmartPark, en la cual fue responsable del diseño de la maqueta y el hardware. A futuro, planea continuar su formación estudiando Ingeniería Electrónica.</p>
+        </div>
+    </div>
+    <div id="integrante2" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Nicolás Sordoni</h4>
+          <p>Estudiante avanzado de informática con un marcado interés por la programación, el desarrollo de software y la creación de soluciones digitales conectadas. Posee conocimientos en desarrollo web, bases de datos, APIs, interfaces de usuario y aplicaciones full-stack, además de experiencia integrando sistemas físicos mediante conectividad WiFi y Bluetooth. Cursa la especialidad Informática en la Escuela Técnica N°2043 San José, donde ha tomado parte en diversos proyectos tecnológicos, incluido SmartPark, en el que se encargó de la codificación y el diseño de la aplicación. Al igual que su compañero, aspira a continuar su camino académico estudiando Ingeniería Electrónica.</p>
+        </div>
+    </div>
+    
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="containerFooter">
+            <div class="divFooterIMG">
+                <!--MAPA GOOGLE MAPS-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.5123697770787!2d-60.6464449234548!3d-32.93747947142706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab3bc098ae53%3A0xef489fd55681c585!2sCasa%20Salesiana%20San%20Jos%C3%A9!5e0!3m2!1ses!2sar!4v1754265586499!5m2!1ses!2sar" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="columns">
+                <div class="nosotros">
+                    <h3 class="h3Footer">SOBRE NOSOTROS</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar">Sitio oficial</a></li>
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar/bienal/">Bienal 2025</a></li>
+                    </ul>
+                </div>
+                <div class="nosotros">
+                    <h3 class="h3Footer">CONTACTO DEL COLEGIO</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed">contacto[@]sanjoserosario.com.ar</a></li>
+                        <li><a class="linkRed">(0341) 4401098</a></li>
+                        <li><a class="linkRed">Lunes a viernes: de 07:00 a 22:00 hs.</a></li>
+                        <li><a class="linkRed">Sábados: de 08:00 a 20:00 hs.</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">REDES DEL COLEGIO</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="https://www.facebook.com/casasanjo">Facebook</a></li>
+                        <li><a class="linkRed" href="https://www.instagram.com/casasanjo/">Instagram</a></li>
+                        <li><a class="linkRed" href="https://ar.linkedin.com/school/casasanjo/">LinkedIn</a></li>
+                        <li><a class="linkRed" href="https://www.youtube.com/c/CasaSalesianaSanJos%C3%A9">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">DESARROLLADORES</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="integrante1"><strong>Ramiro Carrasco</strong></a></li>
+                        <li><a class="linkRed" href="integrante2"><strong>Nicolás Sordoni</strong></a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="footer-decoration"></div>
+            <p class="copyright-text">© 2025 Casa Salesiana San José. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- VOLVER A INICIO -->
+    <a href="../../../html/projects.html" class="floating-home-btn">
+        <span>Volver a inicio</span>
+        <i class="fa-solid fa-right-to-bracket icon"></i>
+    </a>
+    <!-- VOLVER A INICIO -->
+</body>
+</html>
