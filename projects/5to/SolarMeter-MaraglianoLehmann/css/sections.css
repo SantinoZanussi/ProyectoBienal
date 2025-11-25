@@ -1,0 +1,212 @@
+/* ============================================
+   SECTIONS.CSS - Secciones Específicas
+   ============================================ */
+
+/* === Modelo 3D === */
+.model-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.model-showcase {
+    background: var(--surface);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.model-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 2rem;
+    background: var(--border-light);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.model-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.model-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* === Sección del Equipo === */
+.team-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team-card {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+    margin-top: 50px;
+    border: 3.5px solid var(--brand-red);
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-avatar-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--brand-red);
+}
+
+.team-role {
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* === Sección de Marco Legal === */
+.legal-item {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin-top: 50px;
+    border: 3.5px solid black;
+    max-width: 50%;
+    justify-self: anchor-center;
+}
+
+.legal-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--brand-red);
+    transition: width 0.4s ease;
+}
+
+.legal-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+    border-color: var(--brand-red-hover);
+}
+
+.legal-item:hover::after {
+    width: 100%;
+}
+
+.legal-item h3 {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.legal-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.legal-item ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text-light);
+}
+
+.legal-item ul li:last-child {
+    border-bottom: none;
+}
+
+/* === Sección de contacto === */
+.contact-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-hero {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 1px 3px var(--shadow);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-text {
+    margin-bottom: 3rem;
+}
+
+.contact-text h3 {
+    color: var(--text);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-text p {
+    color: var(--text-light);
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-method {
+    padding: 1.5rem;
+    background: var(--bg);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+    border: 3.5px solid black;
+}
+
+.contact-method::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--brand-red);
+    transition: width 0.4s ease;
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+    border-color: var(--brand-red-hover);
+}
+
+.contact-method:hover::after {
+    width: 100%;
+}
+
+.method-details {
+    text-align: center;
+}
+
+.method-details h4 {
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.method-details p {
+    color: var(--brand-red);
+    margin: 0;
+    font-weight: 500;
+}

@@ -1,0 +1,263 @@
+/* ============================================
+   COMPONENTS.CSS - Botones, Cards y Elementos
+   ============================================ */
+
+/* === Botones === */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background: white;
+    color: var(--brand-red);
+}
+
+.btn-primary:hover {
+    background: var(--surface-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: var(--brand-red);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--brand-red);
+    border: 2px solid var(--brand-red);
+}
+
+.btn-outline:hover {
+    background: var(--brand-red);
+    color: white;
+}
+
+.tech-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* === Cards === */
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--surface);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px var(--shadow);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 3.5px solid black;
+}
+
+.card h4 {
+    font-size: 24px;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--brand-red);
+    transition: width 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+    border-color: var(--brand-red-hover);
+}
+
+.card:hover::after {
+    width: 100%;
+}
+
+.card.alcance-separado {
+    margin-top: 3.5rem;
+}
+
+/* === Lista de objetivos === */
+.objectives-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.objective-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--surface);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px var(--shadow);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 3.5px solid black;
+}
+
+.objective-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--brand-red);
+    transition: width 0.4s ease;
+}
+
+.objective-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+    border-color: var(--brand-red-hover);
+}
+
+.objective-item:hover::after {
+    width: 100%;
+}
+
+.check-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--success);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.objective-item span {
+    position: relative;
+    z-index: 1;
+}
+
+/* === Lista de tecnologías === */
+.tech-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-light);
+    padding-left: 1.5rem;
+    position: relative;
+    transition: padding-left 0.2s;
+}
+
+.tech-list li:hover {
+    padding-left: 2rem;
+}
+
+.tech-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--brand-red);
+}
+
+.tech-list li:last-child {
+    border-bottom: none;
+}
+
+/* === Galería === */
+.gallery-item {
+    aspect-ratio: 5/4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3.5px solid black;
+    border-radius: 10px;
+}
+
+/* === Items de funciones === */
+.feature-list {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    padding: 1.5rem;
+    background: transparent;
+    color: black;
+    border-radius: 8px;
+    border: 3.5px solid black;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.feature-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--brand-red);
+    transition: width 0.4s ease;
+}
+
+.feature-item:hover {
+    box-shadow: 0 4px 12px var(--shadow-hover);
+    transform: translateY(-2px);
+    border-color: var(--brand-red-hover);
+}
+
+.feature-item:hover::after {
+    width: 100%;
+}
+
+.feature-item h4 {
+    color: var(--brand-red);
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-item p {
+    position: relative;
+    z-index: 1;
+}

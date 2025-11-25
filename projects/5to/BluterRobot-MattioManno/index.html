@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienal 2025 - Bluter Robot</title>
+    <link rel="icon" type="image/png" href="assets/icon_pag.png">
+    <link rel="stylesheet" href="main.css">
+    <!-- VOLVER A INICIO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/back_button.css">
+    <!-- VOLVER A INICIO -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <script src="./js/app-carousel.js"></script>
+    <script src="./js/open_info_team.js"></script>
+    <script type="module" src="./js/model_3d.js?v=2"></script>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+            <div class="header-content">
+                <nav class="nav" role="navigation">
+                    <ul class="nav-list">
+                        <li><a href="#objetivos"><h3 class="nav-link">Objetivos</h3></a></li>
+                        <li><a href="#tecnologia"><h3 class="nav-link">Tecnología</h3></a></li>
+                        <li><a href="#maqueta"><h3 class="nav-link">Maqueta 3D</h3></a></li>
+                        <li class="logo-item"><img src="./assets/2025 Logo Nuevo.svg" alt="Logo del Colegio" class="logo-img"></li>
+                        <li><a href="#galeria"><h3 class="nav-link">Galería</h3></a></li>
+                        <li><a href="#equipo"><h3 class="nav-link">Equipo</h3></a></li>
+                        <li><a href="#contacto"><h3 class="nav-link">Contacto</h3></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+        <section class="hero" role="banner">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="assets/video robot def.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Bluter Robot</h1>
+                    <p class="hero-subtitle">Un robot pensado para aprender y enseñar programación de forma divertida.</p>
+
+                    <div class="badges">
+                        <span class="badge badge-year">5°1</span>
+                        <span class="badge badge-status">Finalizado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- APP -->
+    <section id="app-preview" class="section">
+        <div class="container">
+            <div class="app-container">
+                <h2>Aplicación</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="app-showcase">
+                    <div class="app-info">
+                        <h4>Funcionalidades Principales</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>Inicio</h4>
+                                <p>Un menú principal que permite al usuario elegir entre las distintas funciones del robot, como programar o controlar manualmente.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Programacion</h4>
+                                <p>Una interfaz con bloques donde se pueden arrastrar y combinar acciones para que el robot las ejecute paso a paso.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Botonera</h4>
+                                <p>Un control manual con botones para mover el robot en diferentes direcciones y probar sus movimientos en tiempo real.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-section">
+                        <div class="phone-container">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="carousel-container">
+                                        <img src="assets/app/Inicio.jpg" alt="Captura 1" class="carousel-item active">
+                                        <img src="assets/app/Programacion.jpg" alt="Captura 2" class="carousel-item">
+                                        <img src="assets/app/Botonera.jpg" alt="Captura 3" class="carousel-item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                            </div>
+                            <button class="carousel-btn next" aria-label="Siguiente">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- OBJETIVOS -->
+        <section id="objetivos" class="section section-alt">
+            <div class="container">
+                <div class="objectives-container">
+                    <h2>Objetivos del Proyecto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Fomentar el pensamiento lógico y computacional a través de la interacción con un robot físico y una interfaz intuitiva.</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Crear una herramienta accesible, de bajo costo y fácil de replicar con materiales básicos y tecnología 3D.</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Promover el aprendizaje de programación y robótica en escuelas, talleres y hogares de manera divertida e interactiva.</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Despertar el interés por la tecnología de una forma accesible, amigable y divertida.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TECNOLOGÍA -->
+        <section id="tecnologia" class="section">
+            <div class="container">
+                <div class="tech-container">
+                    <h2>Tecnologías Utilizadas</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h4>Hardware</h4>
+                            <ul class="tech-list">
+                                <li>Arduino Nano – Módulo Bluetooth HC-05 – Driver Puente H – Motores DC – Servomotores – Estructura impresa en 3D</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4>Software & Datos</h4>
+                            <ul class="tech-list">
+                                <li>Lenguaje Arduino C++ – Aplicación creada con Kodular – Diseño 3D realizado con Fusion 360</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MAQUETA 3D -->
+        <section id="maqueta" class="section section-alt">
+            <div class="container">
+              <div class="model-container">
+                <h2>Maqueta 3D</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="model-showcase">
+                  <div class="model-container">
+                    <div id="stl-viewer" style="width: 100%; height: 500px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="section section-alt">
+            <div class="container">
+                <div class="gallery-container">
+                    <h2>Galería del Proyecto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="assets/Galeria 1.jpg" alt="Imagen 1 del proyecto" class="gallery-img">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/Galeria 2.jpg" alt="Imagen 2 del proyecto" class="gallery-img">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/Galeria 3.jpg" alt="Imagen 3 del proyecto" class="gallery-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EQUIPO -->
+        <section id="equipo" class="section">
+            <div class="container">
+                <div class="team-container">
+                    <h2>Equipo de Trabajo</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="team-card">
+                            <img src="assets/equipo/Integrante 1.jpg" alt="Tobias Alejo Manno" class="team-avatar-img" width="80" height="80">
+                            <h4>Tobias Manno</h4>
+                            <p class="team-role">Desarrollo del software, implementación del código Arduino y programación de la aplicación móvil.</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/equipo/integrante 2.jpg" alt="Valentino Mattio" class="team-avatar-img" width="80" height="80">
+                            <h4>Valentino Mattio</h4>
+                            <p class="team-role">Desarrollo físico del sistema y diseño 3D del robot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARCO LEGAL -->
+        <section id="marco-legal" class="section">
+            <div class="container">
+                <div class="legal-container">
+                    <h2>Marco Legal</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="legal-grid">
+                        <div class="legal-item">
+                            <img src="./assets/qr-code (1).png" alt="Marco_Legal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section section-alt">
+            <div class="container">
+                <div class="contact-container">
+                    <h2>Contacto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="contact-hero">
+                        <div class="contact-text">
+                            <h3>¿Tenés preguntas sobre el proyecto?</h3>
+                            <p>Ponete en contacto con nosotros para más información.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                          <a href="mailto:valentinomattio08@gmail.com?subject=Consulta%20sobre%20el%20proyecto%20Bluter%20Robot&body=Hola!%20Tengo%20una%20pregunta%20sobre%20el%20proyecto%20Bluter%20Robot.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Email</h4>
+                                    <p>tobiasalejo37@gmail.com</p>
+                                    <p>valentinomattio08@gmail.com</p>
+                                </div>
+                            </a>
+    
+                                <a href="https://wa.me/5493412603830?text=Hola!%20Tengo%20una%20pregunta%20sobre%20el%20proyecto%20Bluter%20Robot.%20%C2%BFPodr%C3%ADan%20ayudarme%3F" class="contact-method">  
+                                <div class="method-details">
+                                    <h4>Teléfono</h4>
+                                    <p>3412603830</p>
+                                    <p>3416476776</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- INFO DE LA PERSONA -->
+    <div id="integrante1" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Tobias Manno</h4>
+          <p>Estudiante de informática con interés en la ciberseguridad, la programación y la integración entre software y hardware. Maneja C++ para Arduino, Python, HTML, CSS, JavaScript, SQL, Firebase y herramientas como Kodular, además de estar formándose en Flutter, n8n y desarrollo de videojuegos.
+
+Participó en proyectos tecnológicos como <strong>Bluter Robot</strong>, donde trabajó como programador e integrador hardware–software. Actualmente cursa la especialidad en Informática en la <strong>Escuela Técnica N.º 2043 San José</strong>, con intención de continuar sus estudios en el ámbito de la programación y la tecnología.</p>
+        </div>
+    </div>
+    <div id="integrante2" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Valentino Mattio</h4>
+          <p>Estudiante interesado por la tecnología, automatización, la electrónica y el desarrollo de soluciones prácticas orientadas al mundo real. Cuenta con experiencia Arduino, hardware (cableado y componentes electrónicos), diseño de maquetas 3D, diseño de PBC y prototipado. Actualmente cursando su 5to año de Informática en la <strong>Escuela Técnica N°2043 San José</strong>, donde ha trabajado en múltiples proyectos tecnológicos aplicados.</p>
+        </div>
+    </div>
+    <!-- <div id="integrante3" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Nombre del integrante 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, culpa rerum laboriosam eum dicta iste quas sint asperiores ducimus expedita modi, rem sit exercitationem inventore et libero? Architecto, dolorem optio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, assumenda omnis illo eius doloribus quia porro sunt dolorem veniam a provident unde odit velit accusamus inventore molestias ut eum adipisci.</p>
+        </div>
+    </div> -->
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="containerFooter">
+            <div class="divFooterIMG">
+                <!--MAPA GOOGLE MAPS-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.5123697770787!2d-60.6464449234548!3d-32.93747947142706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab3bc098ae53%3A0xef489fd55681c585!2sCasa%20Salesiana%20San%20Jos%C3%A9!5e0!3m2!1ses!2sar!4v1754265586499!5m2!1ses!2sar" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="columns">
+                <div class="nosotros">
+                    <h3 class="h3Footer">SOBRE NOSOTROS</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar">Sitio oficial</a></li>
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar/bienal/">Bienal 2025</a></li>
+                    </ul>
+                </div>
+                <div class="nosotros">
+                    <h3 class="h3Footer">CONTACTO DEL COLEGIO</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed">contacto[@]sanjoserosario.com.ar</a></li>
+                        <li><a class="linkRed" href="tel:03414401098">(0341) 4401098</a></li>
+                        <li><a class="linkRed">Lunes a viernes: de 07:00 a 22:00 hs.</a></li>
+                        <li><a class="linkRed">Sábados: de 08:00 a 20:00 hs.</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">REDES DEL COLEGIO</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="https://www.facebook.com/casasanjo">Facebook</a></li>
+                        <li><a class="linkRed" href="https://www.instagram.com/casasanjo/">Instagram</a></li>
+                        <li><a class="linkRed" href="https://ar.linkedin.com/school/casasanjo/">LinkedIn</a></li>
+                        <li><a class="linkRed" href="https://www.youtube.com/c/CasaSalesianaSanJos%C3%A9">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">DESARROLLADORES</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="integrante1"><strong>Tobias Manno</strong></a></li>
+                        <li><a class="linkRed" href="integrante2"><strong>Valentino Mattio</strong></a></li>
+                        <!-- <li><a class="linkRed" href="integrante3"><strong>[Nombre3]</strong></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="footer-decoration"></div>
+            <p class="copyright-text">© 2025 Casa Salesiana San José. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- VOLVER A INICIO -->
+    <a href="../../../html/projects.html" class="floating-home-btn">
+        <span>Volver a inicio</span>
+        <i class="fa-solid fa-right-to-bracket icon"></i>
+    </a>
+    <!-- VOLVER A INICIO -->
+</body>
+</html>

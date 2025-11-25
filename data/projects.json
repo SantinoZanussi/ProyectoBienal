@@ -1,0 +1,80 @@
+[
+    {
+      "titulo": "SmartPark",
+      "imagen": "../assets/logos/5to/SmartPark-CarrascoSordoni.png",
+      "anio": 5,
+      "link": "../projects/5to/SmartPark-CarrascoSordoni/index.html",
+      "finalizado": true
+    },
+    {
+      "titulo": "ParkElite",
+      "imagen": "../assets/logos/5to/ParkElite-GoiburuZanussi.png",
+      "anio": 5,
+      "link": "../projects/5to/ParkElite-GoiburuZanussi/index.html",
+      "finalizado": true
+    },
+    {
+      "titulo": "Solar Meter",
+      "imagen": "../assets/logos/5to/SolarMeter-MaraglianoLehmann.jpeg",
+      "anio": 5,
+      "link": "../projects/5to/SolarMeter-MaraglianoLehmann/index.html",
+      "finalizado": true
+    },
+    {
+      "titulo": "ArdTender",
+      "imagen": "../assets/logos/5to/ArdTender-MorelliNuciforaMartinez.jpeg",
+      "anio": 5,
+      "link": "../projects/5to/ArdTender-MorelliNuciforaMartinez/index.html",
+      "finalizado": true
+    },
+    {
+      "titulo": "MetPark",
+      "imagen": "../assets/logos/5to/MetPark-AielloAlonso.png",
+      "anio": 5,
+      "link": "../projects/5to/MetPark-AielloAlonso/index.html",
+      "finalizado": true
+    },
+    {
+      "titulo": "AutoPark",
+      "imagen": "../assets/logos/5to/AutoPark-BonnanseaFerullo.png",
+      "anio": 5,
+      "link": "../projects/5to/AutoPark-BonnanseaFerullo/index.html",
+      "finalizado": false
+    },
+    {
+      "titulo": "BluterRobot",
+      "imagen": "../assets/logos/5to/BluterRobot-MattioManno.png",
+      "anio": 5,
+      "link": "../projects/5to/BluterRobot-MattioManno/index.html",
+      "finalizado": true
+    },
+    {
+      "titulo": "UrbaPark",
+      "imagen": "../assets/logos/5to/UrbaPark-BellaGalarza.png",
+      "anio": 5,
+      "link": "",
+      "finalizado": false
+    },
+    {
+      "titulo": "TuPastilleroVirtual",
+      "imagen": "../assets/logos/5to/TuPastilleroVirtual-LuceyMiahle.jpeg",
+      "anio": 5,
+      "link": "../projects/5to/TuPastilleroVirtual-LuceyMiahle/index.html",
+      "finalizado": false
+    },
+    {
+      "titulo": "SunAlign",
+      "imagen": "../assets/logos/5to/SunAlign-AlanizReynoso.jpeg",
+      "anio": 5,
+      "link": "",
+      "finalizado": false
+    },
+    {
+      "titulo": "Sanjo-Arena",
+      "imagen": "../assets/logo.png",
+      "anio": 34,
+      "link": "../projects/3ro/SanjoArena/index.html",
+      "finalizado": true
+    }
+  ]
+  
