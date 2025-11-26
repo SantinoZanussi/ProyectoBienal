@@ -66,14 +66,21 @@
       "titulo": "SunAlign",
       "imagen": "../assets/logos/5to/SunAlign-AlanizReynoso.jpeg",
       "anio": 5,
-      "link": "",
+      "link": "../projects/5to/SunAlign-AlanizReynoso/index.html",
       "finalizado": false
     },
     {
       "titulo": "Sanjo-Arena",
+      "imagen": "../assets/logos/6to/SanjoArena.svg",
+      "anio": 6,
+      "link": "../projects/6to/SanjoArena/index.html",
+      "finalizado": true
+    },
+    {
+      "titulo": "Volante 'APX' Serial",
       "imagen": "../assets/logo.png",
       "anio": 34,
-      "link": "../projects/3ro/SanjoArena/index.html",
+      "link": "../projects/3ro/Volante-BattistaCarrionRafatti/index.html",
       "finalizado": true
     }
   ]

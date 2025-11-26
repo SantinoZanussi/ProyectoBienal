@@ -1,0 +1,147 @@
+/* ============================================
+   APP-PREVIEW.CSS - Vista Previa de App Móvil
+   ============================================ */
+
+.app-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* === APP LAYOUT === */
+.app-showcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+@media (min-width: 992px) {
+    .app-showcase {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* === APP === */
+.app-info {
+    padding: 2rem;
+}
+
+/* === Sección del teléfono (teléfono + controles) === */
+.phone-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.phone-frame {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background: #1a1a1a;
+    border-radius: 40px;
+    padding: 15px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.phone-screen {
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+/* === Controles del Carrusel === */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: var(--surface);
+    border-radius: 50px;
+}
+
+.carousel-btn {
+    background: var(--brand-red);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.carousel-btn:hover {
+    background: var(--brand-red-hover);
+    transform: scale(1.1);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: black;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.dot:hover {
+    background: var(--brand-red-light);
+    transform: scale(1.2);
+}
+
+.dot.active {
+    background: var(--brand-red);
+    border-color: var(--brand-red-light);
+    transform: scale(1.5);
+    opacity: 1;
+}

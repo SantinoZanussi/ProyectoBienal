@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienal 2025 - SunAlign</title>
+    <link rel="icon" type="image/png" href="assets/icon_pag.png">
+    <link rel="stylesheet" href="main.css">
+    <!-- VOLVER A INICIO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/back_button.css">
+    <!-- VOLVER A INICIO -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <script src="./js/app-carousel.js"></script>
+    <script src="./js/open_info_team.js"></script>
+    <script type="module" src="./js/model_3d.js?v=2"></script>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+            <div class="header-content">
+                <nav class="nav" role="navigation">
+                    <ul class="nav-list">
+                        <li><a href="#objetivos"><h3 class="nav-link">Objetivos</h3></a></li>
+                        <li><a href="#tecnologia"><h3 class="nav-link">Tecnología</h3></a></li>
+                        <li><a href="#maqueta"><h3 class="nav-link">Maqueta 3D</h3></a></li>
+                        <li class="logo-item"><img src="./assets/2025 Logo Nuevo.svg" alt="Logo del Colegio" class="logo-img"></li>
+                        <li><a href="#galeria"><h3 class="nav-link">Galería</h3></a></li>
+                        <li><a href="#equipo"><h3 class="nav-link">Equipo</h3></a></li>
+                        <li><a href="#contacto"><h3 class="nav-link">Contacto</h3></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">
+        <section class="hero" role="banner">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="./assets/video.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">SunAlign</h1>
+                    <p class="hero-subtitle">Más sol, más energía.</p>
+
+                    <div class="badges">
+                        <span class="badge badge-year">En proceso</span>
+                        <span class="badge badge-status">5°1</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- APP -->
+    <section id="app-preview" class="section">
+        <div class="container">
+            <div class="app-container">
+                <h2>Aplicación</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="app-showcase">
+                    <div class="app-info">
+                        <h4>Funcionalidades Principales</h4>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>Modo automático</h4>
+                                <p>Permite iniciar la detección de luz mediante los sensores, ajustando automáticamente la posición del panel sin necesidad de supervisión humana.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Modo manual</h4>
+                                <p>El usuario puede posicionar el dispositivo a su gusto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-section">
+                        <div class="phone-container">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="carousel-container">
+                                        <img src="./assets/app/CapturaApp1.PNG" alt="Captura 1" class="carousel-item active">
+                                        <img src="./assets/app/CapturaApp2.PNG" alt="Captura 2" class="carousel-item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                            </div>
+                            <button class="carousel-btn next" aria-label="Siguiente">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- OBJETIVOS -->
+        <section id="objetivos" class="section section-alt">
+            <div class="container">
+                <div class="objectives-container">
+                    <h2>Objetivos del Proyecto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Optimizar el uso de energía solar.</span>
+                        </div>
+                        <div class="objective-item">
+                            <div class="check-icon">✓</div>
+                            <span>Fomentar las energías limpias y renovables.</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- TECNOLOGÍA -->
+        <section id="tecnologia" class="section">
+            <div class="container">
+                <div class="tech-container">
+                    <h2>Tecnologías Utilizadas</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h4>Hardware</h4>
+                            <ul class="tech-list">
+                                <li>Arduino Nano, ESP32, Servomotor, Motor paso a paso, Resistencias fotosensibles (LDR), Resistencias eléctricas y Panel solar.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4>Software & Datos</h4>
+                            <ul class="tech-list">
+                                <li>Arduino (C++), ESP32 (C++), Mit App Inventor y Conexión bluetooth.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MAQUETA 3D -->
+        <section id="maqueta" class="section section-alt">
+            <div class="container">
+              <div class="model-container">
+                <h2>Maqueta 3D</h2>
+                <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                <div class="model-showcase">
+                  <div class="model-container">
+                    <div id="stl-viewer" style="width: 100%; height: 500px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- EQUIPO -->
+        <section id="equipo" class="section">
+            <div class="container">
+                <div class="team-container">
+                    <h2>Equipo de Trabajo</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="grid grid-2">
+                        <div class="team-card">
+                            <img src="./assets/WhatsApp Image 2025-11-25 at 15.47.50.jpeg" alt="[Nombre Integrante 1]" class="team-avatar-img" width="80" height="80">
+                            <h4>Bautista Alaniz</h4>
+                            <p class="team-role">Desarrollo C++, Desarrollo de aplicación y Maquetado</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/felinegro.jpeg" alt="[Nombre Integrante 2]" class="team-avatar-img" width="80" height="80">
+                            <h4>Felipe Reynoso</h4>
+                            <p class="team-role">Desarrollo de la aplicación y Maquetado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARCO LEGAL -->
+        <section id="marco-legal" class="section">
+            <div class="container">
+                <div class="legal-container">
+                    <h2>Marco Legal</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="legal-grid">
+                        <div class="legal-item">
+                            <h3>Normativas Ambientales</h3>
+                            <ul>
+                                <li>
+                                    El derecho a un ambiente sano es el derecho que tiene toda persona a vivir en un entorno saludable, equilibrado y libre de contaminación, que asegure el bienestar presente y también de las generaciones futuras.
+
+                                    Está en la Constitución Nacional (art. 41).
+
+                                    Protege tanto a las personas como a los ecosistemas.
+
+                                    Es un derecho colectivo, o sea, pertenece a toda la comunidad.
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="justify-items: center;">
+                            <div class="legal-item">
+                            <img width="50%" height="50%" src="assets/app/qrdruetta.png" alt="">
+                        </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section section-alt">
+            <div class="container">
+                <div class="contact-container">
+                    <h2>Contacto</h2>
+                    <div style="margin-top: 10px; height: 2px; background-color: red; opacity: 0.5; width: 550px; display: flex; justify-content: center; margin: 10px auto;"></div>
+                    <div class="contact-hero">
+                        <div class="contact-text">
+                            <h3>¿Tenés preguntas sobre el proyecto?</h3>
+                            <p>Ponete en contacto con nosotros para más información.</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:[Email]" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Email</h4>
+                                    <p>sunaligncsj@gmail.com</p>
+                                </div>
+                            </a>
+    
+                            <a href="tel:[Teléfono]" class="contact-method">
+                                <div class="method-details">
+                                    <h4>Teléfono</h4>
+                                    <p>+54 341 608 2685</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- INFO DE LA PERSONA -->
+    <div id="integrante1" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Bautista Alaniz</h4>
+          <p>Soy estudiante de 5to año del Colegio San José, con interés en el área tecnológica y enfoque en la aplicación práctica de herramientas digitales. Poseo conocimientos en programación en C++ y en el desarrollo de páginas web, lo que me permite comprender y trabajar sobre soluciones técnicas vinculadas a la eficiencia y automatización. Actualmente participo en el proyecto SunAlign, orientado a mejorar el aprovechamiento de la energía solar.</p>
+        </div>
+    </div>
+    <div id="integrante2" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Felipe Reynoso</h4>
+          <p>Soy estudiante de 5to año del Colegio San José, con interés en las áreas de tecnología y energías renovables. Cuento con conocimientos en diseño y desarrollo de páginas web, lo que me facilita comprender procesos técnicos y proponer soluciones prácticas. Formo parte del proyecto SunAlign, enfocado en mejorar el rendimiento y la eficiencia de los sistemas de captación de energía solar.</p>
+        </div>
+    </div>
+    <!-- <div id="integrante3" class="modal">
+        <div class="modal-content">
+          <span class="cerrar">&times;</span>
+          <h4>Nombre del integrante 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, culpa rerum laboriosam eum dicta iste quas sint asperiores ducimus expedita modi, rem sit exercitationem inventore et libero? Architecto, dolorem optio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, assumenda omnis illo eius doloribus quia porro sunt dolorem veniam a provident unde odit velit accusamus inventore molestias ut eum adipisci.</p>
+        </div>
+    </div> -->
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="containerFooter">
+            <div class="divFooterIMG">
+                <!--MAPA GOOGLE MAPS-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.5123697770787!2d-60.6464449234548!3d-32.93747947142706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab3bc098ae53%3A0xef489fd55681c585!2sCasa%20Salesiana%20San%20Jos%C3%A9!5e0!3m2!1ses!2sar!4v1754265586499!5m2!1ses!2sar" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="columns">
+                <div class="nosotros">
+                    <h3 class="h3Footer">SOBRE NOSOTROS</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar">Sitio oficial</a></li>
+                        <li><a class="linkRed" href="https://sanjoserosario.com.ar/bienal/">Bienal 2025</a></li>
+                    </ul>
+                </div>
+                <div class="nosotros">
+                    <h3 class="h3Footer">CONTACTO DEL COLEGIO</h3>
+                    <ul class="footer-menu-nosotros">
+                        <li><a class="linkRed">contacto[@]sanjoserosario.com.ar</a></li>
+                        <li><a class="linkRed" href="tel:03414401098">(0341) 4401098</a></li>
+                        <li><a class="linkRed">Lunes a viernes: de 07:00 a 22:00 hs.</a></li>
+                        <li><a class="linkRed">Sábados: de 08:00 a 20:00 hs.</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">REDES DEL COLEGIO</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="https://www.facebook.com/casasanjo">Facebook</a></li>
+                        <li><a class="linkRed" href="https://www.instagram.com/casasanjo/">Instagram</a></li>
+                        <li><a class="linkRed" href="https://ar.linkedin.com/school/casasanjo/">LinkedIn</a></li>
+                        <li><a class="linkRed" href="https://www.youtube.com/c/CasaSalesianaSanJos%C3%A9">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h3 class="h3Footer">DESARROLLADORES</h3>
+                    <ul class="footer-menu-redes">
+                        <li><a class="linkRed" href="integrante1"><strong>Bautista Alaniz</strong></a></li>
+                        <li><a class="linkRed" href="integrante2"><strong>Felipe Reynoso</strong></a></li>
+                        <!-- <li><a class="linkRed" href="integrante3"><strong>[Nombre3]</strong></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="footer-decoration"></div>
+            <p class="copyright-text">© 2025 Casa Salesiana San José. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- VOLVER A INICIO -->
+    <a href="../../../html/projects.html" class="floating-home-btn">
+        <span>Volver a inicio</span>
+        <i class="fa-solid fa-right-to-bracket icon"></i>
+    </a>
+    <!-- VOLVER A INICIO -->
+</body>
+</html>

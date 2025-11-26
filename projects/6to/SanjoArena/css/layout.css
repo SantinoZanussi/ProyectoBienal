@@ -1,0 +1,77 @@
+/* ============================================
+   LAYOUT.CSS - Estructura y Grids
+   ============================================ */
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-alt {
+    background: var(--surface);
+}
+
+/* === Container === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* === Grid para todas las "tarjetas" de la web === */
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-2 {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row dense;
+    column-gap: 2rem;
+    row-gap: 3.5rem;
+    margin-top: 20px;
+}
+
+.grid-3 {
+    grid-template-columns: 1fr;
+}
+
+/* === Responsive === */
+@media (min-width: 768px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* === Grid de la Galería === */
+.gallery-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 50px;
+}
+
+/* === Grid del Marco Legal === */
+.legal-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.legal-grid {
+    display: flex;
+    justify-content: center;
+}
